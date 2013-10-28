@@ -1,4 +1,4 @@
 saintperl5
 ==========
 
-Saint Perl workshop in Saint Petersburg 2013
+The Saint Perl workshop in Saint Petersburg 2013
