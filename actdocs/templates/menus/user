@@ -47,10 +47,6 @@
 
 </td><td align="right">
 
-[% FOREACH lang = global.languages %]
-	<span id="goto-lang">[% WRAPPER menus/item %]
-		<a href="[% lang.uri %]">&#x2192;&nbsp;[% lang.name %]</a>
-	[% END %]</span>
-[% END %]
+
 
 </td></tr></table>

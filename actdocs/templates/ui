@@ -60,13 +60,7 @@
 				</table>
 			</td>
 		</tr>
-        [% IF global.request.path_info == 'index.html' %]
-            <tr>
-                <td colspan="2">                
-                    <div style="background: #99b3cc url(/[% global.request.conference %]/img/world.gif) center center no-repeat; text-align: center"><img src="/[% global.request.conference %]/img/perlevents.gif" width="717" height="285" /></div>
-                </td>
-            </tr>
-        [% END %]
+       
 		<tr class="footer">
 			<td class="left" width="50%">
 				<p>
