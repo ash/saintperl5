@@ -1,21 +1,11 @@
 [% WRAPPER ui %]
 
-[% IF global.request.language == 'ru' %]
-       [% title = 'Конференция «Saint Perl 2013»' %]
-[% ELSE %]
-       [% title = 'The “Saint Perl 2013” workshop' %]
-[% END %]
+[% title = 'Конференция «Saint Perl 2013»' %]
 
 <p>
-	<t>
-		<en>“Saint Perl 2013” is the fifth St. Petersburg workshop devoted to Perl programming language.
-		        It will take place on <nobr><b>December 21st, 2013</b>.</nobr>
-		</en>
-		<ru>«Saint Perl 2013» — пятая в Санкт-Петербурге
+		«Saint Perl 2013» — пятая в Санкт-Петербурге
 			тематическая конференция, посвященная языку программирования Perl.
 			Мероприятие состоится в субботу, <nobr><b>21 декабря 2013 года</b></nobr>.
-		</ru>
-	</t>
 </p>
 
 <div class="incut" style="font-size: 230%; margin-bottom: 0.3em; background: #99ccac; color: white; padding: 0.2em; text-align: center">
@@ -24,10 +14,7 @@
 
 <div style="margin-top: 1em; padding: 1em 2em 2em 2em; background-color: #f5f5ea; z-index: 3;">
 	<h2>
-		<t>
-			<en>Venue</en>
-			<ru>Место проведения</ru>
-		</t>
+		Место проведения
 	</h2>
 		<table style="border-color: #f5f5ea;"><tr>
 			<td style="width:250px">
@@ -40,46 +27,18 @@
 			</td>
 		</td>
 		</tr></table>
-	<!--h2>
-		<t>
-			<en>Sponsors</en>
-			<ru>Спонсоры</ru>
-		</t>
-	</h2-->
-	<!--table style="border-color: #f5f5ea;"><tr>
-		<td style="width:250px"><a href="http://www.pandafood.ru/"><img style="margin-top: 5px" src="/[% global.request.conference %]/img/pandafood.png" width="150" height="150" alt="www.pandafood.ru" border="0" /></a></td>
-		<td class="info" style="padding-left: 1em;">
-			<t>
-				<en>
-					<a href="http://www.pandafood.ru/">Panda<a> — Chinese food delivered to your home!
-					<br><br>
-					Great news! Attendies are provided by extremely tasty chinese food during the lunch break. Thanks to awesome <a href="http://www.pandafood.ru/" target="_blank">Panda</a> :)
-				</en>
-				<ru>
-					<a href="http://www.pandafood.ru/">Panda<a> — Китайская кухня с доставкой на дом!
-					<br><br>
-					Отличная новость! На обеденном перерыве участников конференции ждёт безумно вкусная и довольно-таки сытная китайская еда, предоставленная чудесной компанией <a href="http://www.pandafood.ru/" target="_blank">Panda</a>. Китайские палочки прилагаются :)
-				</ru>
-			</t>
-		</td>
-	</tr></table-->
+	
 	
 	<a name="info_partners"></a>
 	<h2>
-		<t>
-			<en>Infopartners</en>
-			<ru>Информационные партнёры</ru>
-		</t>
+		Информационные партнёры
 	</h2>
 	<table style="border-color: #f5f5ea;">
 	<tr>
 		<td><a href="http://www.math.spbu.ru/en/"><img style="margin-top: 5px" src="/[% global.request.conference %]/img/matmeh.png" width="250" height="48" alt="" border="0" /></a>
-        </td>
+        <d>
 		<td class="info" style="padding-left: 1em;">
-			<t>
-				<en><a href="http://www.math.spbu.ru/en/">Math faculty</a> of St-Petersburg State University</en>
-				<ru><a href="http://www.math.spbu.ru/">Математико-механический факультет</a> Санкт-Петербургского государственного университета.</ru>
-			</t>
+            <a href="http://www.math.spbu.ru/">Математико-механический факультет</a> Санкт-Петербургского государственного университета.
 		</td>
 	</tr>
 	<tr>
@@ -91,24 +50,7 @@
 		</td>
 	</tr>
 	</table>
-	<!--table style="border-color: #f5f5ea;"><tr>
-		<td><a href="http://theoryandpractice.ru/"><img style="margin-top: 5px" src="/[% global.request.conference %]/img/theoryandpractice.png" width="250" height="91" alt="" border="0" /></a></td>
-		<td class="info" style="padding-left: 1em;">
-			<t>
-				<en><a href="http://theoryandpractice.ru/">Theory and practice</a> in St-Petersburg - project to join people who seek for knowledge and people who share knowledge.<br><br><a href="http://theoryandpractice.ru/seminars/21834-konferentsiya-saint-perl-2011-18-12">Event page</a></en>
-				<ru><a href="http://theoryandpractice.ru/">Теории и практики</a> Петербурга - это проект, объединяющий людей, которые ищут новые знания и готовы делиться ими.<br><br><a href="http://theoryandpractice.ru/seminars/21834-konferentsiya-saint-perl-2011-18-12">Страница мероприятия</a></ru>
-			</t>
-		</td>
-	</tr></table>
-	<table style="border-color: #f5f5ea;"><tr>
-		<td style="width:250px"><a href="http://it-portfolio.net/"><img style="margin-top: 5px" src="/[% global.request.conference %]/img/it-portfolio.png" width="150" height="150" alt="" border="0" /></a></td>
-		<td class="info" style="padding-left: 1em;">
-			<t>
-				<en><a href="http://it-portfolio.net/">IT-Portfolio</a> - service for IT-people. You may create full home-page analog without extra effort such as using CMS. Also, to have profile on this service is a good benefit.</en>
-				<ru><a href="http://it-portfolio.net/">IT-портфолио</a> - это сервис, позволяющий людям IT-сферы создать аналог полноценной домашней страницы без лишних трудностей таких, как создание дизайна или структуры сайта и настройка CMS. Профиль на сервисе дает значительно больше возможностей, чем обычная домашняя страница.</ru>
-			</t>
-		</td>
-	</tr></table-->
+	
 </div>
 
 <div style="margin-top: 4em" id="MoreEvents">
@@ -121,20 +63,13 @@
 
 <div style="margin-top: 4em" id="MoreEvents">
 				<div style="font-size: 230%; margin-bottom: 0.3em; background: #99b3cc; color: white; padding: 0.2em">
-					<t>
-						<en>Previous events</en>
-						<ru>Предыдущие мероприятия</ru>
-					</t>
+					Предыдущие мероприятия
 			</div>
 			<p>
-				<t>
-					<ru>
+				
 						С 2007 года мы провели серию Perl-мероприятий в семи странах: в России, на Украине, в Белоруссии, Болгарии, Латвии, Узбекистане и Казахстане.
-					</ru>
-					<en>
-						We’ve been orgarnizing Perl events since 2007 and have covered seven countries: Russia, Ukraine, Belarus, Bulgaria, Latvia, Uzbekistan and Kazakhstan.
-					</en>
-				</t>
+					
+				
 			</p>
 <ul>
                 <li>Россия: Москва (6 мероприятий), Санкт-Петербург (4), Екатеринбург (3), Ростов-на-Дону, Владивосток;</li>
@@ -209,10 +144,7 @@
 </div>
 
 <div style="font-size: 230%; margin-top: 40px; margin-bottom: 0.3em; background: #99b3cc; color: white; padding: 0.2em">
-	<t>
-		<en>Russian Perl — latest news</en>
-		<ru>Русский Perl — свежие новости</ru>
-	</t>
+	Русский Perl — свежие новости
 </div>
 
 <style type="text/css">
@@ -229,37 +161,20 @@ font-weight:bold;
 </div>
 
 [% BLOCK context %]
-	<t>; margin-bottom: 0.3em
-		<en>
-			<h2 style="margin-top: 0; margin-bottom: 0.3em">Organizers</h2>
-			<h2><a href="http://spb.pm.org/">SPb.pm</a></h2>
-			<h2><a href="http://moscow.pm.org/">Moscow.pm</a></h2>
-			<br /><br />
-        </en>
-		<ru>
+	
+		
 			<h2 style="margin-top: 0">Организаторы</h2>
 			<h2><a href="http://spb.pm.org/">SPb.pm</a></h2>
 			<h2><a href="http://moscow.pm.org/">Moscow.pm</a></h2>
 			<br /><br />
-		</ru>
-	</t>
+		
 
 	<div style="padding: 5px; margin: 0; width: 160px; background-color: #f5f5ea; z-index: 3;">
-		<t>
-			<en>
-				If your company loves Perl, please become our sponsor. White to <a href="mailto:mail@yapcrussia.org">mail@yapcrussia.org</a> for further information.
-			</en>
-			<ru>
+		
 				Приглашаем организации, которым небезразличен Perl, стать спонсорами мероприятия. По любым вопросам обращайтесь, пожалуйста, по адресу <a href="mailto:mail@yapcrussia.org">mail@yapcrussia.org</a>.
-			</ru>
-		</t>
+			
 	</div>
 
-<!--
-	<br /><br />
-	<a class="twitter-timeline" href="https://twitter.com/search?q=%23yapcrussia+OR+%23perl7+OR+%23saintperl+OR+%23saintper2013" data-widget-id="399211998895804416">Tweets about "#yapcrussia OR #perl7 OR #saintperl OR #saintper2013"</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
--->
 
 
 
